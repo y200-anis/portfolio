@@ -1,41 +1,47 @@
 import React from 'react'
 import styled from 'styled-components';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GithubIcon from '@material-ui/icons/GitHub';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import Particle from '../Components/Particle';
 
 function HomePage() {
-    return (
-        <HomePageStyled>
-            <div className="particle-con">
-                <Particle />
-            </div>
-            <div className="typography">
-                <h1>Bonjour, C'est <span>Yanis Ait Taouit</span></h1>
-                <p>
-                Je valide actuellement mon DUT Informatique à l'IUT de Villetaneuse, 
-                et afin de préparer au mieux ma future formation, 
-                j'ai l'honneur de vous informer que je suis à la recherche d'une entreprise qui pourrait m’accueillir en tant qu’apprentie 
-                ingénieur informatique et applications pour une durée de 36 mois dans le cadre de ma formation à l'ESIEE Paris. 
-                </p>
-                <div className="icons">
-                    <a href="https://www.linkedin.com/in/yanis-ait-taouit-511b661ba/" className="icon i-facebook">
-                        <LinkedInIcon />
-                    </a>
-                    <a href="https://github.com/y200-anis" className="icon i-github">
-                        <GithubIcon />
-                    </a>
-                </div>
-            </div>
-        </HomePageStyled>
-    )
+  return (
+    <HomePageStyled>
+      <div className="particle-con">
+        <Particle />
+      </div>
+      <div className="typography">
+        <h1>
+          Bonjour, C'est <span>Yanis Ait Taouit</span>
+        </h1>
+        <p>
+          Je valide actuellement mon DUT Informatique à l'IUT de Villetaneuse,
+          et afin de préparer au mieux ma future formation, j'ai l'honneur de
+          vous informer que je suis à la recherche d'une entreprise qui pourrait
+          m’accueillir en tant qu’apprentie ingénieur informatique et
+          applications pour une durée de 36 mois dans le cadre de ma formation à
+          l'ESIEE Paris.
+        </p>
+        <div className="icons">
+          <a
+            href="https://www.linkedin.com/in/yanis-ait-taouit-511b661ba/"
+            className="icon i-facebook"
+          >
+            <LinkedIn />
+          </a>
+          <a href="https://github.com/y200-anis" className="icon i-github">
+            <GitHub />
+          </a>
+        </div>
+      </div>
+    </HomePageStyled>
+  );
 }
 
 const HomePageStyled = styled.header`
     width: 100%;
     height: 100vh;
     position: relative;
-   
+
     .typography{
         position: absolute;
         top: 50%;

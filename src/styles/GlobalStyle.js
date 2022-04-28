@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 /* :root{
@@ -67,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
-    
+
 }
 
 body{
@@ -152,7 +151,7 @@ h6{
   .ham-burger-menu{
       position: absolute;
       right: 5%;
-      top: 3%; 
+      top: 3%;
       display: none;
       z-index: 15;
       svg{
